@@ -31,7 +31,7 @@ function navbar(){
         <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            <img src="https://svgsilh.com/svg/3099712.svg" alt="Bootstrap" width="30" height="24">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,19 +39,13 @@ function navbar(){
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link${activeIndex}" href="index.html">HOME</a>
+                    <a class="nav-link${activeIndex}" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link${activeCatalogov1}" href="catalogov1.html">CATALOGO v1</a>
+                    <a class="nav-link${activeCatalogov1}" href="catalogov1.html">Catalogo productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link${activeCatalogov2}" href="catalogov2.html">CATALOGO v2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link${activeCatalogov2}" href="catalogov2.html">CATALOGO v2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link${activeCarroCompra}" href="carro-compras.html">CARRO DE COMPRAS</a>
+                    <a class="nav-link${activeCarroCompra}" href="carro-compras.html">Carrito</a>
                 </li>                
             </ul>
         </div>
