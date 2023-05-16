@@ -1,5 +1,6 @@
-
 $(document).ready(function () {
+
+
 
     //LISTA CON PRODUCTOS AÑADIDOS AL CARRITO
     let productosCarrito = []
@@ -10,14 +11,14 @@ $(document).ready(function () {
             $.each(data, function (i, item) {
                 $('#servicio').append(
                     "<div  class='cuadroservicio'>" +
-                    "<div class='nombre'>" + "<h3>" + item.name + "</h3>" + "</div>" +
-                    "<div class='container'>" +
-                    "<img class='img_prod' src= '" + item.image + "' >" +
-                    "</div>" +
-                    "<div class='container dato'>" + "<h4>" + item.precio + "</h4>" +
-                    "</div>" +
-                    "<h5 class='desc_serv '>" + item.description + "</h5>" +
-                    "<button class='btn btn-primary' >Agregar al carrito</button> " +
+                        "<div class='nombre'>" + "<h3>" + item.name + "</h3>" + "</div>" +
+                        "<div class='container'>" +
+                        "<img class='img_prod' src= '" + item.image + "' >" +
+                        "</div>" +
+                        "<div class='container dato'>" + "<h4>$" + item.precio + "</h4>" +
+                        "</div>" +
+                        "<h5 class='desc_serv '>" + item.description + "</h5>" +
+                        "<button class='btn btn-primary' >Agregar al carrito</button> " +
                     "</div>")
 
             })

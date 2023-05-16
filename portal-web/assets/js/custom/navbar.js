@@ -28,10 +28,10 @@ function navbar(){
 
     */
     const nav = `
-        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg barra" data-bs-theme="dark">
         <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="https://svgsilh.com/svg/3099712.svg" alt="Bootstrap" width="30" height="24">
+            <img class="icono" src="https://svgsilh.com/svg/3099712.svg" alt="Bootstrap" width="30" height="24">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,13 +39,19 @@ function navbar(){
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link${activeIndex}" href="index.html">Inicio</a>
+                    <a class="nav-link${activeIndex} " href="index.html">
+                        <p class="linkbarra"> Inicio </p>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link${activeCatalogov1}" href="catalogov1.html">Catalogo productos</a>
+                    <a class="nav-link${activeCatalogov1} linkbarra" href="catalogov1.html">
+                        <p class="linkbarra"> Catalogo productos </p>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link${activeCarroCompra}" href="carro-compras.html">Carrito</a>
+                    <a class="nav-link${activeCarroCompra} linkbarra" href="carro-compras.html">
+                    <p class="linkbarra">Carrito</p>
+                    </a>
                 </li>                
             </ul>
         </div>

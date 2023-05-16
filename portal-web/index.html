@@ -11,38 +11,29 @@
   <link rel="stylesheet" href="assets/css/style/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <script src="https://kit.fontawesome.com/44774d462e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- DIV QUE SERÁ REDEFINIDO MEDIANTE navbar.js -->
   <div id="navbar"></div>
-
-
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    CARRITO DE COMPRAS
-  </button>
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Carrito de compras</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div id="modalCarrito" class="modal-body">
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Pagar</button>
-        </div>
-      </div>
+  <!-- Modal Offcanvas para carrito -->
+
+  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> 
+    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+  </button>
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+        Carrito de compras
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div id="modalCarrito" class="offcanvas-body">
+      <!--Insertar datos de compra carrito-->
     </div>
   </div>
-
-
 
     <div id="servicio">
       <!--Aqui se inyectan los productos consumidos por la API-->

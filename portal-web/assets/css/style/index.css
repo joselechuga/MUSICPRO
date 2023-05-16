@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.icono{
+    width: 3vw;
+    height: 5vh;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.barra{
+    border: 1px solid rgb(39, 38, 38);
+    background-color: rgb(42, 152, 192);
+}
+
+
+.linkbarra{
+    color: rgb(237, 227, 237);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.cuadroservicio{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
