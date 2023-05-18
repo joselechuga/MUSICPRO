@@ -1,9 +1,12 @@
+
+
 $(document).ready(function () {
 
 
 
     //LISTA CON PRODUCTOS AÑADIDOS AL CARRITO
     let productosCarrito = []
+
 
 //CONSUMO E INYECCION DE DATOS EN HTML
     $.get("https://636848caedc85dbc84e49015.mockapi.io/producto",
@@ -26,6 +29,11 @@ $(document).ready(function () {
     );
 
         const carritoProd = document.getElementById('modalCarrito');
+
+        
+        const valorTotal = document.getElementById('totalPago');
+        
+        let total2 = document.getElementById('total');
 
     $('#servicio').on('click',function(e){
 
@@ -57,36 +65,56 @@ $(document).ready(function () {
                 productosCarrito = [...productosCarrito,infoProd]
                 console.log(productosCarrito);
             }
-            
-            
-
 
             mostrarCarrito()
         }
-    })
+    });
+
     const mostrarCarrito = () => {
 
         carritoProd.innerHTML =' ';
+        
+        let total = 0;
+        let totalProductos = 0;
+        let operacion = 0;
 
         productosCarrito.forEach(producto => {
             const containerProductos = document.createElement('div')
             containerProductos.classList.add('cart-product')
             containerProductos.innerHTML = ` 
-           
+            <div class="contenedorCarrito"> 
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        ${producto.name}
+                        ${producto.precio}
+                        <span class="badge bg-primary rounded-pill"> ${producto.quantity}</span>   
+                    </li>
+                </ul>
+                
+            </div>
+            `;
 
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    ${producto.name}
-                    ${producto.precio}
-                    <span class="badge bg-primary rounded-pill"> ${producto.quantity}</span>   
-                </li>
-            </ul>
-            `
+            carritoProd.append(containerProductos);
+            total = parseInt(producto.precio.slice(1));
+            totalProductos = producto.quantity ;
+            operacion = (total * totalProductos);
+            console.log( 'TOTAL',operacion )
+        });
 
-        carritoProd.append(containerProductos);
+        valorTotal.innerText = `${operacion}`;
+        
+        const pagoWeb = document.getElementById('pagoweb');
+        pagoWeb.innerHTML = ` 
+        <div > 
+            <p>Pagar</p>
+        </div>
+        `;
 
-        })
-    }   
+
+    };
+
+
 });
+
 
 
