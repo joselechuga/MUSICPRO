@@ -107,6 +107,7 @@ $(document).ready(function () {
         pagoWeb.innerHTML = ` 
         <div > 
             <p>Pagar</p>
+            <button class="btn btn-primary" value="${operacion}" onclick="create()" >PAGAR</button>
         </div>
         `;
 
