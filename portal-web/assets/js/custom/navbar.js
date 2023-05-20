@@ -55,6 +55,7 @@ function navbar(){
                 </li>                
             </ul>
         </div>
+         <div id="Dolar" class="Dolar" ></div>
         </div>
     </nav>
     `;

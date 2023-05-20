@@ -101,17 +101,14 @@ $(document).ready(function () {
             console.log( 'TOTAL',operacion )
         });
 
-        valorTotal.innerText = `${operacion}`;
         
         const pagoWeb = document.getElementById('pagoweb');
         pagoWeb.innerHTML = ` 
         <div > 
-            <p>Pagar</p>
-            <button class="btn btn-primary" value="${operacion}" onclick="create()" >PAGAR</button>
+            <input type="text" class="form-control" id="txt-amount" value="${operacion}" readonly="readonly">
+            <button class="btn btn-primary" onclick="create()" >PAGAR</button>
         </div>
         `;
-
-
     };
 
 
@@ -119,3 +116,12 @@ $(document).ready(function () {
 
 
 
+//API DOLAR
+
+fetch('https://mindicador.cl/api').then(function(response) {
+    return response.json();
+}).then(function(dailyIndicators) {
+    document.getElementById("Dolar").innerHTML = 'El valor actual del Dólar acuerdo es $' + dailyIndicators.dolar_intercambio.valor;
+}).catch(function(error) {
+    console.log('Requestfailed', error);
+});
