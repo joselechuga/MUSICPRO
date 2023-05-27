@@ -27,3 +27,6 @@ Clave: 123
 
 <img src="document/img/Pago.gif" alt="integracion-transbank.drawio" width="600px">
 
+# CODIGOS APIS
+
+<img src="document/img/Codigo_APIS.gif" alt="integracion-transbank.drawio" width="600px">
