@@ -39,18 +39,8 @@ function navbar(){
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link${activeIndex} " href="index.html">
-                        <p class="linkbarra"> Inicio </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link${activeCatalogov1} linkbarra" href="catalogov1.html">
-                        <p class="linkbarra"> Catalogo productos </p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link${activeCarroCompra} linkbarra" href="carro-compras.html">
-                    <p class="linkbarra">Carrito</p>
+                    <p class="linkbarra">Inicio</p>
                     </a>
                 </li>                
             </ul>
