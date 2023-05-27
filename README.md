@@ -5,9 +5,7 @@ Entrar en carpeta api-rest-cliente-transbank "CD api-rest-cliente-transbank"
 # EJECUTAR SERVIDOR
 
 Primero correr servidor manage para API
-py manage.py
-
-Luego ejecutar Go live ( Live server )
+py manage.py , luego ejecutar Go live ( Live server )
 --------------------------------------------------------------------------
 <img src="document/img/Servidor.gif" alt="integracion-transbank.drawio" width="600px">
 
