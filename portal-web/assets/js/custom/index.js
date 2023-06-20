@@ -25,6 +25,7 @@ $(document).ready(function () {
                     "</div>")
 
             })
+            console.log('PRODUCTOS',data)
         }
     );
 
