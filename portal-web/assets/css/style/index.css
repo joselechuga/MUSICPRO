@@ -25,6 +25,14 @@ body{
     font-size: 35px;
 }
 
+.Dolar{
+    color: #e3d9d3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    -webkit-text-stroke: 0.5px black;
+
+}
+
 .botoncarrocompras{
     box-shadow: 2px 5px #888888;
     padding: 10px;
