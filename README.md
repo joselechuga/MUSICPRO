@@ -1,6 +1,10 @@
-# MUSICPRO
+# INSTRUCCIONES
 ```
-Entrar en carpeta api-rest-cliente-transbank "CD api-rest-cliente-transbank"
+Entrar en carpeta api-rest-cliente-transbank "CD api-rest-cliente-transbank",
+luego se debe correr el servidor con el siguiente comando: 
+py manage.py.
+Luego se utiliza la extencion LIVE SERVER- GO LIVE para acceder a la vista.
+Finalmente accedemos a la carpeta "portal-web".
 ```
 # EJECUTAR SERVIDOR
 ```
