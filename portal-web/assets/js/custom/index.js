@@ -117,12 +117,5 @@ $(document).ready(function () {
 
 
 
-//API DOLAR
 
-fetch('https://mindicador.cl/api').then(function(response) {
-    return response.json();
-}).then(function(dailyIndicators) {
-    document.getElementById("Dolar").innerHTML = 'El valor actual del Dólar acuerdo es $' + dailyIndicators.dolar_intercambio.valor;
-}).catch(function(error) {
-    console.log('Requestfailed', error);
-});
+

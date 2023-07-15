@@ -31,7 +31,11 @@ function navbar(){
         <nav class="navbar navbar-expand-lg barra" data-bs-theme="dark">
         <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img class="icono" src="https://svgsilh.com/svg/3099712.svg" alt="Bootstrap" width="30" height="24">
+        <div class="iconobarra_titulo">
+        <img class="icono" src="https://svgsilh.com/svg/3099712.svg" alt="Bootstrap" width="30" height="24">
+        <p class="t_icono">MUSIC</p>
+        <p class="t_icono2"> PRO</p>
+      </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,7 +49,13 @@ function navbar(){
                 </li>                
             </ul>
         </div>
-         <div id="Dolar" class="Dolar" ></div>
+         <button class="btn btngit">
+            <a href="https://github.com/joselechuga/MUSICPRO">
+                <div class="divgit"> 
+                    <img class="imggit" src="https://1000marcas.net/wp-content/uploads/2020/02/logo-GitHub.png" alt="">
+                </div>
+            </a>
+         </button>
         </div>
     </nav>
     `;
