@@ -1,3 +1,15 @@
+# TECNOLOGIAS / LENGUAJES /LIBRERIAS
+```
+Python - Django, Flask, request, requests, jsonify, flask_cors, Javascript - JQuery, HTML, CSS, Bootstrap.
+
+Para poder utilizar estas librerias se deben instalar con los siguientes comandos:
+    - pip install Flask
+    - pip install request
+    - pip install requests
+    - pip install jsonify
+    - pip install flask_cors
+```
+
 # INSTRUCCIONES EJECUTAR SERVIDOR
 ```
 Entrar en carpeta api-rest-cliente-transbank "CD api-rest-cliente-transbank",

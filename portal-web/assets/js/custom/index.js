@@ -13,16 +13,16 @@ $(document).ready(function () {
         function (data) {
             $.each(data, function (i, item) {
                 $('#servicio').append(
-                    "<div  class='cuadroservicio'>" +
-                        "<div class='nombre'>" + "<h3>" + item.name + "</h3>" + "</div>" +
-                        "<div class='container'>" +
-                        "<img class='img_prod' src= '" + item.image + "' >" +
-                        "</div>" +
-                        "<div class='container dato'>" + "<h4>$" + item.precio + "</h4>" +
-                        "</div>" +
-                        "<h5 class='desc_serv '>" + item.description + "</h5>" +
+                    '<div class="col">'+
+                    '<div class="card">'+
+                        '<img src="' + item.image +'" class="card-img-top" alt="...">'+
+                        '<div class="card-body">'+
+                        '<h3 class="card-title">'+ item.name + '</h3>'+
+                        '<h4 class="card-text">'+'$'+ item.precio +'</h4>'+
                         "<button class='btn btn-primary' >Agregar al carrito</button> " +
-                    "</div>")
+                        '</div>'+
+                    '</div>'+
+                ' </div>')
 
             })
             console.log('PRODUCTOS',data)

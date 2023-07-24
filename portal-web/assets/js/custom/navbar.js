@@ -4,8 +4,8 @@ function navbar(){
     //  NAVBAR (BARRA DE NAVEGACIÓN O MENÚ)
     const htmlName = window.location.pathname;
     let activeIndex = "";
-    let activeCatalogov1 = "";
-    let activeCatalogov2 = "";
+    let activeCatalogo1 = "";
+    let activeCatalogo2 = "";
     let activeCarroCompra= "";
 
     console.log('PÁGINA SELECCIONADA: ', htmlName);
@@ -13,10 +13,10 @@ function navbar(){
     /*  VALIDACIÓN PARA MODIFICAR CSS EN EL MENÚ DEJANDO ACTIVO LA PÁGINA ACTUAL*/
     if(htmlName.includes("index.html")){
         activeIndex = " activate text-white";
-    }else if(htmlName.includes("catalogov1.html")){
-        activeCatalogov1 = " activate text-white";
-    }else if(htmlName.includes("catalogov2.html")){
-        activeCatalogov2 = " activate text-white";
+    }else if(htmlName.includes("catalogo1.html")){
+        activeCatalogo1 = " activate text-white";
+    }else if(htmlName.includes("catalogo2.html")){
+        activeCatalogo2 = " activate text-white";
     }else if(htmlName.includes("carro-compras.html")){
         activeCarroCompra = " activate text-white";
     }
@@ -30,7 +30,7 @@ function navbar(){
     const nav = `
         <nav class="navbar navbar-expand-lg barra" data-bs-theme="dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a a class="nav-link${activeIndex} linkbarra" href="index.html">
         <div class="iconobarra_titulo">
         <img class="icono" src="https://svgsilh.com/svg/3099712.svg" alt="Bootstrap" width="30" height="24">
         <p class="t_icono">MUSIC</p>
@@ -43,10 +43,15 @@ function navbar(){
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link${activeCarroCompra} linkbarra" href="carro-compras.html">
+                    <a class="nav-link${activeIndex} linkbarra" href="index.html">
                     <p class="linkbarra">Inicio</p>
                     </a>
-                </li>                
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link${activeCatalogo1} linkbarra" href="catalogo1.html">
+                    <p class="linkbarra">Catalogo</p>
+                    </a>
+                </li>                 
             </ul>
         </div>
          <button class="btn btngit">
